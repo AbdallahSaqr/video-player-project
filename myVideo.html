@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video
+      id="video"
+      src="../Demos/video/big_buck_bunny.mp4"
+      width="400"
+      height="auto"
+    ></video>
+    <br />
+    <input
+      type="range"
+      id="SeekBar"
+      value="0"
+      min="0"
+      max="100"
+      step="1"
+      style="position: absolute; width: 300px"
+    />
+    <span id="TimeElapsed" style="position: absolute; margin-left: 305px"
+      >00:00</span
+    >
+    <span style="position: absolute; margin-left: 342px">/</span>
+    <span id="TimeLeft" style="position: absolute; margin-left: 347px"
+      >00:00</span
+    >
+    <br />
+    <input type="button" id="Play" value="Play" />
+    <input type="button" id="Stop" value="Stop" />
+    <input type="button" id="Previousvideo" value="<<" />
+    <input type="button" id="Rewind" value="<" />
+    <input type="button" id="Forward" value=">" />
+    <input type="button" id="Nextvideo" value=">>" />
+    <input type="range" id="Volume" value="0" min="0" max="100" step="1" />
+    <input type="button" id="Mute" value="Mute" /> <br />
+    Speed
+    <input type="range" id="Speed" value="0" min="0" max="100" step="1" />
+    <script src="./script.js"></script>
+  </body>
+</html>
